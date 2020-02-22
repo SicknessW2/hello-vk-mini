@@ -13,6 +13,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		<PanelHeader>Example</PanelHeader>
 		{fetchedUser &&
 		<Group title="User Data Fetched with VK Connect">
+	<div id="cont_abbce8f0ef4e14c0beef763d22d17518"><script type="text/javascript" async src="https://www.pogoda.com/wid_loader/abbce8f0ef4e14c0beef763d22d17518"></script></div>
 			<Cell
 				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
@@ -27,7 +28,6 @@ const Home = ({ id, go, fetchedUser }) => (
 					Show me the Persik, please
 				</Button>
 			</Div>
-<div id="cont_abbce8f0ef4e14c0beef763d22d17518"><script type="text/javascript" async src="https://www.pogoda.com/wid_loader/abbce8f0ef4e14c0beef763d22d17518"></script></div>
 		</Group>
 	</Panel>
 );
